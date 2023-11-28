@@ -13,6 +13,17 @@ const App = () => {
 
   const deleteTask =(taskId)=>{
     setTasks(tasks.filter(task => task.id !== taskId))}
+  
+  const completeTask = (taskId)=>{
+    setTasks((prevTasks) =>
+    prevTasks.map((task) =>
+      task.id === taskId ? { ...task, state: !task.state } : task
+    )
+  );
+    console.log('tarea finalizada')
+};
+
+    
 
   const handleChangeFilter = (evento) => {
       setSearchString(evento.target.value)}
@@ -27,7 +38,7 @@ const App = () => {
         <input type="text" placeholder='Buscar tarea por título...' value ={searchString} onChange={handleChangeFilter}/>
       </div>
       <TaskForm addTask={addTask}/>
-      <TaskList tasks ={currentTasks} deleteTask={deleteTask}/>
+      <TaskList tasks ={currentTasks} deleteTask={deleteTask} completeTask={completeTask}/>
      
     </>
   );

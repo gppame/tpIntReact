@@ -18,6 +18,7 @@ const TaskForm = ({addTask}) => {
     const title = evento.target.title.value
     const description = evento.target.description.value
     const task = {title, description, createAt: new Date().toDateString(),id: uuidv4()}
+  
     addTask(task)
     handleCloseModal()}
 
