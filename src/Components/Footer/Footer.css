@@ -1,15 +1,15 @@
 
 .Footer {
-
-    flex-shrink: 0;
-    background-color: #aaa7a7;
-}
-
-.Footer span{
-
-    font-family: Poppins;
+    background-color: #a8a8a8db;
+    width: 100% ;
+    margin-top:auto;
+    font-family:Verdana, Tahoma, sans-serif;
     font-size: 22px;
     font-style: normal;
     line-height: normal;
+    text-align: center;
+    color: #FFF;
+    padding: 5px;
 
 }
+

@@ -1,9 +1,10 @@
 import React from 'react'
 import TaskItem from '../TaskItem/TaskItem';
+import './TaskList.css'
 
 const TaskList = ({tasks,deleteTask, completeTask }) => {
   return (
-    <div >
+    <div className='bodyTaskList'>
         {   tasks.length == 0 
             ? <h2>Aun no tienes tareas</h2> 
             : tasks.map(task =>(

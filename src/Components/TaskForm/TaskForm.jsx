@@ -23,8 +23,10 @@ const TaskForm = ({addTask}) => {
     handleCloseModal()}
 
 return (
-    <div>
-          <button onClick={handleOpenModal}> Agregar tarea <TiPlusOutline /> </button>
+    <div > 
+         <div className='btn-AddTask'>
+            <button  onClick={handleOpenModal}> Agregar tarea <TiPlusOutline /> </button>
+          </div>
             {
                 isOpenModal && 
                 <div className='modal-background'>

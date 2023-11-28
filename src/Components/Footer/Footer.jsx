@@ -4,7 +4,7 @@ const Footer = () => {
   return (
     <div className='Footer'>
       
-      <span>Derechos reservados &copy; 2023 - Grupo G</span>
+      Derechos reservados &copy; 2023 - Grupo G
       
     </div>
   )

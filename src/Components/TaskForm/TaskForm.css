@@ -3,29 +3,33 @@
     position: absolute;
     top: 0;
     left:0;
-    width:100vw;
-    height: 100vh;
+    width:100%;
+    height: 100%;
     background-color: #535ca23b; 
     display: flex;
     justify-content: center;
     align-items: center;}
 
 .modal {
-    padding: 15px;
+    padding: 5px;
     border-radius: 10px;
     display: flex;
     flex-direction: column;
     background-color: #535CA2;
-    width: 35vw;}
+    width: 25%;
+    align-items: center;}
 
 .input-container {
     display: flex;
     flex-direction: column;
-    margin-bottom: 20px;
-    gap:10px;  
-    width: 100%;}
+    margin-bottom: 5px;
+    gap:5px;  
+    width: 100%;
+    padding: 5px;
+}
 
 .input-container textarea {
+    display: flex;
     width: 100%;
     height: 150px;}
 
@@ -33,5 +37,20 @@
     display: flex;
     width: 100%;
     justify-content: space-between;
+    margin-bottom: 15px;
+
+}
+
+.btn-AddTask button{
+    margin-top: 15px;
+    margin-left: 15px;
+    width: 15%;
+    height: 100%;
+ 
+}
+
+.btn-AddTask button:hover{
+    background-color: rgba(227, 11, 87, 0.323);
+
 
 }

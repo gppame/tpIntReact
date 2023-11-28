@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { TaskForm, TaskList,Footer, Header } from './Components';
+import './App.css'
+
 
 const App = () => {
 
@@ -31,16 +33,17 @@ const App = () => {
        },[searchString,tasks])
 
   return (
-    <>
+    < div className='bodyApp'>
       <Header/>
-      <div>
-        <input type="text" placeholder='Buscar tarea por título...' value ={searchString} onChange={handleChangeFilter}/>
-      </div>
+
+        <input id='inputBuscarTarea' type="text" placeholder='Buscar tarea por título...' value ={searchString} onChange={handleChangeFilter}/>
+
       <TaskForm addTask={addTask}/>
+      
       <TaskList tasks ={currentTasks} deleteTask={deleteTask} completeTask={completeTask}/>
      
      <Footer/>
-    </>
+    </div>
   );
 
 };export default App;

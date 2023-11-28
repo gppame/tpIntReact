@@ -1,17 +1,47 @@
 
+.bodyTaskItem{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .contenedorTaskItem{
-
-    width: 70%;
-
+    font-family:Verdana,Tahoma, sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    line-height: normal;
+    margin: 15px;
+    padding: 10px;
+    width: 50%;
+    display: flex;
+    color: #ffff;
+    background-color: rgba(137, 43, 226, 0.175);;
+    align-items: center;
+    border-radius: 20px;
+    justify-content: center;
+    
 }
 .cajaTaskItem{
 
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;    
-    background-color: rgb(29, 173, 173);
-
+    border-radius: 20px;
+    width: 80%;
+    
 }
 
+.btnsCajaTaskItem button {
+    display: flex;
+    justify-content: center;  
+    margin-top: 15px;
+    padding: 5px;
+    width: 100%;
+    border-radius: 10px;
+}
 
+.btnsCajaTaskItem button:hover{
+    background-color: rgba(227, 11, 87, 0.323);
+
+
+}
