@@ -1,0 +1,15 @@
+
+.Footer {
+
+    flex-shrink: 0;
+    background-color: #aaa7a7;
+}
+
+.Footer span{
+
+    font-family: Poppins;
+    font-size: 22px;
+    font-style: normal;
+    line-height: normal;
+
+}
