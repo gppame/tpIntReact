@@ -1,5 +1,7 @@
 import React, { useState } from 'react'
 import { TiPlusOutline } from "react-icons/ti";
+import { FaCheck } from "react-icons/fa6";
+import { FcCancel } from "react-icons/fc";
 import './TaskForm.css'
 import { v4 as uuidv4 } from 'uuid';
 
@@ -42,8 +44,8 @@ return (
                                 <textarea id='description' nombre='description' ></textarea>
                             </div>
                             <div className='btn-container'>
-                                <button onClick={handleCloseModal}>Cancelar</button>
-                                <button type ='submit'>Agregar</button>
+                                <button onClick={handleCloseModal}>Cancelar <FcCancel /></button>
+                                <button type ='submit'>Agregar < FaCheck /></button>
                             </div>
                         </form>
                     </div>

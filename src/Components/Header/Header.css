@@ -5,8 +5,8 @@
     align-items: center;
     width:100% vh;
     height:60px;
-    padding: 5px;
-    background-color: #7183C0;
+    padding: 25px;
+    background-color: #886eddd8;
     gap:8px;
     color: #FFF;
     padding-left: 15px;
@@ -15,14 +15,14 @@
 
 .header h1 {
     font-family:Verdana,Tahoma, sans-serif;
-    font-size: 25px;
+    font-size: 45px;
     font-style: normal;
     line-height: normal;
-    margin-top: 12px;
+    margin-top: 25px;
 
 }
 
 .header span {
 
-    font-size: 25px;
+    font-size: 45px;
 }

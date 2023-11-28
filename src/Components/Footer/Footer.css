@@ -1,6 +1,6 @@
 
 .Footer {
-    background-color: #a8a8a8db;
+    background-color: #797777;
     width: 100% ;
     margin-top:auto;
     font-family:Verdana, Tahoma, sans-serif;
@@ -9,7 +9,8 @@
     line-height: normal;
     text-align: center;
     color: #FFF;
-    padding: 5px;
+    padding: 15px;
+    font-weight: bold;
 
 }
 
