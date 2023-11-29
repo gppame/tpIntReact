@@ -19,18 +19,18 @@ const TaskForm = ({addTask}) => {
     evento.preventDefault()
     const title = evento.target.title.value
     const description = evento.target.description.value
-    const task = {title, description, createAt: new Date().toDateString(),id: uuidv4()}
-  
+    const task = {title, description, createAt: new Date().toDateString(),id: uuidv4(),state:false}
     addTask(task)
     handleCloseModal()}
+    
 
 return (
     <div > 
          <div className='btn-AddTask'>
             <button  onClick={handleOpenModal}> Agregar tarea <TiPlusOutline /> </button>
           </div>
-            {
-                isOpenModal && 
+            { 
+            isOpenModal && 
                 <div className='modal-background'>
                     <div className='modal'>
                         <h2>Agregar nueva tarea</h2>
@@ -49,7 +49,7 @@ return (
                             </div>
                         </form>
                     </div>
-            </div>    
+                 </div>    
             }
     </div>        
   )
